@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- menandai bahwa script yang digunakan merupakan jquery -->
+  <script src="jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+
+      $(document).ready(function(){
+        $("#daftar").addClass("merahkuning");
+        $(".subdaftar").addClass("kuninghitam");
+      });
+      </script>
+      <!-- script diatas merupakan script jquery sebagai selector -->
+      <style type="text/css">
+        .merahkuning{
+          color: red;
+          font-weight:bold;
+          background-color:yellow;
+          padding:3px
+        }
+        .kuninghitam{
+          color: blue;
+          background-color: green;
+        }
+        </style>
+        <!-- script style css merubah font dan warna -->
+  </head>
+  <body>
+    <div>
+      <!-- mengelompokkan elemen -->
+      <p>paragraf pertama</p>
+    </div>
+    <div >
+      <ul id="daftar">
+        <!-- membuat list -->
+        <li>item 1</li>
+        <li class="subdaftar">item 2</li>
+        <li>item 3</li>
+      </ul>
+    </div>
+  </body>
+</html>
